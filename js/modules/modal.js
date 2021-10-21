@@ -5,7 +5,7 @@ export default class Modal {
     this.containerModal = document.querySelector(containerModal);
 
     this.eventToggleModal = this.eventToggleModal.bind(this);
-    this.cliqueForaModal = this.cliqueForaModal.bind(this);
+    this.clickOutsideModal = this.clickOutsideModal.bind(this);
   }
 
   toggleModal() {
@@ -17,7 +17,7 @@ export default class Modal {
     this.toggleModal();
   }
 
-  cliqueForaModal(event) {
+  clickOutsideModal(event) {
     if (event.target === this.containerModal) {
       this.toggleModal();
     }
@@ -26,7 +26,7 @@ export default class Modal {
   addModalEvents() {
     this.openButton.addEventListener('click', this.eventToggleModal);
     this.closeButton.addEventListener('click', this.eventToggleModal);
-    this.containerModal.addEventListener('click', this.cliqueForaModal);
+    this.containerModal.addEventListener('click', this.clickOutsideModal);
   }
 
   init() {

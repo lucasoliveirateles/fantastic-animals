@@ -7,7 +7,7 @@ export default class AnimateNumbers {
     this.handleMutation = this.handleMutation.bind(this);
   }
 
-  static incrementarNumero(number) {
+  static incrementNumber(number) {
     const total = +number.innerText;
     const increment = Math.floor(total / 100);
     
@@ -25,7 +25,7 @@ export default class AnimateNumbers {
   }
 
   animateNumbers() {
-    this.numbers.forEach(number => this.constructor.incrementarNumero(number));
+    this.numbers.forEach(number => this.constructor.incrementNumber(number));
   }
 
   handleMutation(mutation) {

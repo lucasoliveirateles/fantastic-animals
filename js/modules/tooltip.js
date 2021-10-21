@@ -25,7 +25,7 @@ export default class Tooltip {
     currentTarget.removeEventListener('mousemove', this.onMouseMove);
   }
 
-  criarTooltipBox(element) {
+  createTooltipBox(element) {
     const tooltipBox = document.createElement('div');
     const text = element.getAttribute('aria-label');
 
@@ -37,7 +37,7 @@ export default class Tooltip {
   }
 
   onMouseOver({ currentTarget }) {
-    this.criarTooltipBox(currentTarget);
+    this.createTooltipBox(currentTarget);
 
     currentTarget.addEventListener('mousemove', this.onMouseMove);
     currentTarget.addEventListener('mouseleave', this.onMouseLeave);
