@@ -19,7 +19,8 @@ export default class Funcionamento {
     const semanaAberto = this.diasSemana.indexOf(this.diaAgora) !== -1;
     const horarioAberto = (this.horarioAgora >= this.horarioSemana[0]
       && this.horarioAgora < this.horarioSemana[1]);
-    return semanaAberto && horarioAberto;
+   
+      return semanaAberto && horarioAberto;
   }
 
   ativaAberto() {
@@ -34,6 +35,7 @@ export default class Funcionamento {
       this.dadosAgora();
       this.ativaAberto();
     }
+    
     return this;
   }
 }
