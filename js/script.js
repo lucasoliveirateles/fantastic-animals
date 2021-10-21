@@ -1,4 +1,4 @@
-import ScrollSuave from './modules/scroll-suave.js';
+import ScrollSmooth from './modules/scroll-suave.js';
 import Accordion from './modules/accordion.js';
 import TabNav from './modules/tabnav.js';
 import Modal from './modules/modal.js';
@@ -6,13 +6,13 @@ import Tooltip from './modules/tooltip.js';
 import DropdownMenu from './modules/dropdown-menu.js';
 import MenuMobile from './modules/menu-mobile.js';
 import Operation from './modules/operation';
-import fetchAnimais from './modules/fetch-animals';
+import fetchAnimals from './modules/fetch-animals';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
 import ScrollAnimate from './modules/scroll-animate';
 import SlideNav from './modules/slide.js';
 
-const scrollSuave = new ScrollSuave('[data-menu="smooth"] a[href^="#"]');
-scrollSuave.init();
+const scrollSmooth = new ScrollSmooth('[data-menu="smooth"] a[href^="#"]');
+scrollSmooth.init();
 
 const accordion = new Accordion('[data-anime="accordion"] dt');
 accordion.init();
@@ -38,7 +38,7 @@ menuMobile.init();
 const operation = new Operation('[date-week]', 'open');
 operation.init();
 
-fetchAnimais('./animals-api.json', '.grid-numbers');
+fetchAnimals('./animals-api.json', '.grid-numbers'); 
 
 fetchBitcoin('https://blockchain.info/ticker', '.btc-price');
 

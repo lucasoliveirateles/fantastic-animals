@@ -1,4 +1,4 @@
-export default class ScrollSuave {
+export default class ScrollSmooth {
   constructor(links, options) {
     this.linksInternos = document.querySelectorAll(links);
     if (options === undefined) {
