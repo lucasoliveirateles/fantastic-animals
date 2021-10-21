@@ -10,11 +10,9 @@
   justify-content: center;
   align-items: center;
 }
-
-.modal-container.ativo {
+.modal-container.active {
   display: flex;
 }
-
 .modal {
   background: white;
   width: 80vw;
@@ -25,7 +23,6 @@
   position: relative;
   box-sizing: border-box;
 }
-
 @keyframes modal {
   from {
     opacity: 0;
@@ -36,12 +33,10 @@
     transform: translate3d(0, 0, 0);
   }
 }
-
-.ativo .modal {
+.active .modal {
   animation: modal .3s forwards;
 }
-
-.fechar {
+.close {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -49,18 +44,16 @@
   top: -30px;
   right: -30px;
   position: absolute;
-  background: #E54 url('../img/fechar.svg') no-repeat center center;
+  background: #E54 url('../img/close.svg') no-repeat center center;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
   cursor: pointer;
 }
-
 .modal label {
   font-family: 'IBM Plex Mono', monospace;
   display: block;
   font-weight: bold;
   margin: 1rem 0 .5rem 0;
 }
-
 .modal input {
   width: 100%;
   padding: .7rem .5rem;
@@ -68,7 +61,6 @@
   border: 2px solid #222;
   border-radius: 0px;
 }
-
 .modal button[type="submit"] {
   display: block;
   background: #E54;

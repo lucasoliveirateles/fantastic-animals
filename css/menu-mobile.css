@@ -1,7 +1,6 @@
 [data-menu="button"] {
   display: none;
 }
-
 @media (max-width: 700px) {
   .js [data-menu="button"] {
     display: flex;
@@ -19,7 +18,6 @@
     position: relative;
     z-index: 300;
   }
-  
   .js [data-menu="button"]::before {
     margin-right: 4px;
     content: '';
@@ -30,11 +28,9 @@
     box-shadow: 0 4px #fff, 0 -4px #fff;
     transition: transform .3s;
   }
-
   .js [data-menu="button"].active::before {
     transform: rotate(90deg);
   }
-
   .js [data-menu="list"] {
     display: none;
     position: absolute;

@@ -5,8 +5,8 @@ export default function fetchAnimais(url, target) {
   // com o total de animais
   function createAnimal(animal) {
     const div = document.createElement('div');
-    div.classList.add('numero-animal');
-    div.innerHTML = `<h3>${animal.specie}</h3><span data-numero>${animal.total}</span>`;
+    div.classList.add('animal-number');
+    div.innerHTML = `<h3>${animal.specie}</h3><span date-number>${animal.total}</span>`;
     return div;
   }
 
@@ -19,7 +19,7 @@ export default function fetchAnimais(url, target) {
 
   // Anima os números de cada animal
   function animaAnimaisNumeros() {
-    const animaNumeros = new AnimaNumeros('[data-numero]', '.numeros', 'ativo');
+    const animaNumeros = new AnimaNumeros('[date-number]', '.numbers', 'active');
     animaNumeros.init();
   }
 
