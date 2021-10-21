@@ -5,10 +5,10 @@ import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
 import DropdownMenu from './modules/dropdown-menu.js';
 import MenuMobile from './modules/menu-mobile.js';
-import Functionamento from './modules/funcionamento.js';
-import fetchAnimais from './modules/fetch-animais.js';
+import Operation from './modules/operation';
+import fetchAnimais from './modules/fetch-animals';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
-import ScrollAnima from './modules/scroll-anima.js';
+import ScrollAnimate from './modules/scroll-animate';
 import SlideNav from './modules/slide.js';
 
 const scrollSuave = new ScrollSuave('[data-menu="smooth"] a[href^="#"]');
@@ -26,8 +26,8 @@ modal.init();
 const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
 
-const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
-scrollAnima.init();
+const scrollAnimate = new ScrollAnimate('[data-anime="scroll"]');
+scrollAnimate.init();
 
 const dropdownMenu = new DropdownMenu('[data-dropdown]');
 dropdownMenu.init();
@@ -35,8 +35,8 @@ dropdownMenu.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
-const funcionamento = new Functionamento('[date-week]', 'open');
-funcionamento.init();
+const operation = new Operation('[date-week]', 'open');
+operation.init();
 
 fetchAnimais('./animals-api.json', '.grid-numbers');
 

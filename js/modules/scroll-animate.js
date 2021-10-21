@@ -1,6 +1,6 @@
 import debounce from './debounce.js';
 
-export default class ScrollAnima {
+export default class ScrollAnimate {
   constructor(sections) {
     this.sections = document.querySelectorAll(sections);
     this.windowMetade = window.innerHeight * 0.6;
